@@ -1,3 +1,11 @@
+:root {
+  --bg: #212121;
+  --bg-2: #000000;
+  --text: #ffffff;
+  --text-2: #aaaaaa;
+  --accent: #cc0000;
+}
+
 .video-main {
   display: flex;
   max-width: 1114px;
