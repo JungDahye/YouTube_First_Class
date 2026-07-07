@@ -1,0 +1,9 @@
+.video-main {
+  display: flex;
+  max-width: 1114px;
+  margin: 0 auto;
+}
+
+.video-content {
+  padding: 24px;
+}

@@ -11,5 +11,48 @@
     <link rel="stylesheet" href="./css/video.css" />
     <title>First Class Youtube - Video</title>
   </head>
-  <body></body>
+  <body>
+    <main class="video-main">
+      <div class="video-content">
+        <!-- 비디오 :: 비디오 영역 -->
+        <div class="video-bx">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/prkygi2am8E?si=ZL3-Yq1isMjuoIFL"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- 비디오 :: 제목 -->
+        <div class="video-title"></div>
+
+        <!-- 비디오 :: 유저정보 -->
+        <div class="video-user"></div>
+
+        <!-- 비디오 :: 댓글 -->
+        <div class="video-comments"></div>
+      </div>
+
+      <!-- 비디오 :: 관련 비디오 리스트 -->
+      <aside class="video-list">
+        <!-- 비디오 :: 리스트 탭 -->
+        <input type="radio" name="videoListTab" id="all" checked />
+        <input type="radio" name="videoListTab" />
+        <div class="video-tab">
+          <label for="all"></label>
+          <label for="from"></label>
+        </div>
+        <!-- 비디오 :: 리스트 내용 -->
+        <div class="video-list-content">
+          <div id="all"></div>
+          <div id="from"></div>
+        </div>
+      </aside>
+    </main>
+  </body>
 </html>
