@@ -75,6 +75,9 @@ body {
 .video-bx {
   display: flex;
   gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
 .video-bx .video-img {
@@ -82,6 +85,10 @@ body {
   flex: 0 0 168px;
   height: 94px;
   background-color: #444;
+}
+
+.video-bx .video-img img {
+  object-fit: cover;
 }
 
 .video-bx .video-img .time {
@@ -96,11 +103,25 @@ body {
 }
 
 .video-bx .video-info {
-  padding: 7px 0;
+  padding: 7px 24px 7px 0;
 }
 
 .video-bx .video-info .title {
   font-size: 0.875rem;
   line-height: 1.25;
   color: var(--text);
+  margin-bottom: 2px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.video-bx .video-info .maker,
+.video-bx .video-info .info {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-2);
 }
