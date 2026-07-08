@@ -7,10 +7,29 @@
   --text-2: #aaaaaa;
   --accent: #cc0000;
 }
+/* 네이게이션 바에 사용할 구글 아이콘 적용 */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+}
+
+html {
+    font-size: 16px; /* 1rem = 16px 기준 고정 */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 /* ===================== 기본 설정 ===================== */
 
 body {
+    margin: 0;
+
     background-color: var(--bg-2);
     color: var(--text);
     font-family: Roboto, sans-serif; 
@@ -24,8 +43,268 @@ button {
 
 img {
     display: block;
-    max-width: 100%;
+
 }
 
 /* ===================== 전체 채널 ===================== */
+.channel {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #000;
+}
 
+/* ===================== 채널 배너 ===================== */
+
+.channel-banner {
+    width: 100%;
+}
+
+.channel-banner img {
+    width: 100%;
+    display: block;
+}
+
+/* ===================== 채널 정보 ===================== */
+
+/* 프로필 + 구독 버튼 영역 */
+.channel-cover {
+    width: 100%;
+    height: 7rem;
+    padding: 0 3.4375rem;
+  
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: var(--bg-3);
+}
+
+.channel-title {
+    
+    display: flex;
+    align-items: center;
+    gap: 1.125rem;
+}
+
+.channel-title img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    opacity: 65%;
+}
+
+.channel-name {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.channel-subscribers {
+    margin-top: 0.3125rem;
+    font-size: 0.875rem;
+    color: var(--text-2);
+}
+
+
+/* ===================== 구독 버튼 ===================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== 채널 메뉴 ===================== */
+
+/* 메뉴 전체 영역 */
+.channel-toolbar {
+    height: 3rem;
+  
+    background-color: var(--bg-3);
+    border-bottom: 0.0625rem solid var(--bg-4); 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.channel-toolbar ul {
+    display: flex;
+    height: 100%;
+}
+
+.channel-toolbar li {
+    width: 6.875rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.channel-toolbar a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text-2);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    
+}
+/* 언더바가 클릭시 반응하게 하기위해 a.active 사용 */
+.channel-toolbar a.active {
+    color: var(--text);
+    position: relative;
+}
+/* < 네이게이션 밑 언더바 >>>> 언더바만 따로 내리기 위해 따로 클래스 지정해줌 
+>>> 실제로 존재 하지 않은 가상요소를 만들어줌 -> a::after 사용 */
+.channel-toolbar a.active::after {
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    bottom: -0.1rem;
+
+    width: 100%;
+    height: 0.1875rem;
+
+    border-bottom: 0.1875rem solid var(--text-2);
+    transform: translateX(-50%);
+}
+
+.channel-search-btn {
+    width: 3.75rem;
+    height: 3rem;
+    color: var(--text-2);
+    font-size: 1.125rem;
+}
+
+
+/* ===================== 채널 :: 왼쪽 유튜브 영상 ===================== */
+.small-video {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 3.4375rem;
+
+    background-color: var(--bg-2);
+
+  
+    
+}
+/* 유튜브 영상 박스 */
+.player {
+    width: 35%;
+    aspect-ratio: 16 / 9;
+    flex-shrink: 0;
+}
+/* iframe 실제 유튜브 영상 */
+.youtube-player {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 채널 :: 오른쪽 | 영상 설명 */
+.video-description {
+    flex: 1;
+    min-width: 0;
+    width: 25rem;
+    height: 14.875rem;
+    padding-bottom: 5.5rem;
+    flex: none;
+}
+.video-title {
+    margin: 0 0 0.875rem;
+    
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+}
+
+.video-time {
+    margin: 0 0 0.875rem;
+    color: var(--text-2);
+}
+
+.video-desc {
+    margin: 0;
+
+    font-size: 0.825rem;
+    line-height: 1.25rem;
+}
+
+/* ===================== 영 상 섹 션 1 , 2 공 통 ===================== */
+
+.playlist { 
+    padding: 0 3.4375rem 2.5rem; 
+  
+    
+}
+
+.playlist-header {
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+}
+.playlist-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.play-all-btn {
+    color: var(--text-2);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+/* 영상 카드 목록 */
+.playlist-content {
+    display: flex;
+    gap: 1rem;
+}
+/* 영상 카드 */
+.video-card {
+    width: calc((100% - 4rem) / 5);       
+    flex-shrink: 0;
+}
+.video-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+.video-card-title {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+/* views | maonth ago */
+.video-meta {
+    font-size: 0.8125rem;
+    color: var(--text-2);
+}
+
+.video-channel {
+    margin-bottom: 0.25rem;
+
+    font-size: 0.8125rem;
+    color: var(--text-2);
+}
