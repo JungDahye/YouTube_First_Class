@@ -125,16 +125,18 @@ img {
 
 /* ===================== 채널 메뉴 ===================== */
 
-/* 메뉴 전체 영역 */
+/*  메뉴 전체 영역  */
 .channel-toolbar {
     height: 3rem;
+    padding: 0 0.4375rem;
   
     background-color: var(--bg-3);
     border-bottom: 0.0625rem solid var(--bg-4); 
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .channel-toolbar ul {
@@ -188,8 +190,29 @@ img {
 .channel-search-btn {
     width: 3.75rem;
     height: 3rem;
+    margin-left: 1rem;
+
     color: var(--text-2);
     font-size: 1.125rem;
+}
+.channel-arrow-btn {
+    margin-left: auto;
+    margin-right: 5rem;
+
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text-2);
+}
+/*  화살표만 크게  */
+.channel-arrow-btn .material-symbols-outlined {
+    font-size: 2.3rem;      
+    color: var(--text-2);
+    margin-bottom: 0.05rem;
 }
 
 
