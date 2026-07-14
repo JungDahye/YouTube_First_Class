@@ -104,7 +104,7 @@
 ## 🔗 관련 링크
 
 - [🎨 Figma 디자인 원본 보러가기](https://www.figma.com/design/hF0mWmuYpECZ1bclHkTuPb/%EC%83%98%ED%94%8C%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Youtube-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9?node-id=0-1&p=f&t=RX8p9smhe2txzra9-0)
-- [🚀 GitHub Pages 배포 링크](추후 추가 예정)
+- [🚀 GitHub Pages 배포 링크](https://jungdahye.github.io/YouTube_First_Class/index.html)
 
 ---
 
