@@ -33,8 +33,8 @@
 ## ✨ 주요 기능
 
 - **🗂️ 탭 (Tab):** Channel 페이지의 메뉴 탭, Video 페이지의 관련 동영상 리스트 탭
-- **🪟 모달 (Modal):** SUBSCRIBES 버튼 클릭 시 모달 창
-- **🔽 드롭다운 (Dropdown):** Video 페이지의 댓 정렬 기준 선택 창
+- **🪟 모달 (Modal):** SUBSCRIBES 버튼 클릭 시 모달 창, SHARE 버튼 클릭 시 모달 창
+- **🔽 드롭다운 (Dropdown):** Header 알림 및 프로필 호버 시 메뉴, Video 페이지의 댓 정렬 기준 선택 창
 
 <br />
 
